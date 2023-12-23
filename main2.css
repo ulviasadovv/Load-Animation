@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.panel{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    animation: loadan infinite;
+    animation-duration: 1.25s;
+}
+
+.second{
+    animation-delay: 150ms;
+}
+
+.third{
+    animation-delay: 300ms;
+}
+
+@keyframes loadan{
+    0%{
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    35%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
